@@ -104,7 +104,7 @@ Some of the Endpoints are:
   - Query Parameters:
     - start_date (string): Start of the date range in YYYY-MM-DD format.
     - end_date (string): End of the date range in YYYY-MM-DD format.
-    - Year Ranges from year 2016 to 2018
+    - Year Ranges from year 2016 to 2017
   - Example: http://127.0.0.1:5000/getOrders?start_date=2024-01-01&end_date=2024-01-31
 
 - getNProducts : Retrieves product details based on the specified limit.
