@@ -80,37 +80,69 @@ Base URL: http://127.0.0.1:5000
 Some of the Endpoints are:
 
 - getNOrders : Retrieves order details based on the specified limit.
-    - Endpoint: /getNOrders/{limit}
-    - Description: Fetches details for up to {limit} orders.
-    - limit (integer): Maximum number of orders to retrieve. Must be a positive integer.
-    - Example : http://127.0.0.1:5000/getNOrders/50.
+
+  - Endpoint: /getNOrders/{limit}
+  - Description: Fetches details for up to {limit} orders.
+  - limit (integer): Maximum number of orders to retrieve. Must be a positive integer.
+  - Example : http://127.0.0.1:5000/getNOrders/50.
 
 - getNCustomers : Retrieves customer details based on the specified limit.
 
-    - Endpoint: /getNCustomers/{limit}
-    - limit (integer): Maximum number of customers to retrieve. Must be a positive integer.
-    - Example : http://127.0.0.1:5000/getNCustomers/100
-    
+  - Endpoint: /getNCustomers/{limit}
+  - limit (integer): Maximum number of customers to retrieve. Must be a positive integer.
+  - Example : http://127.0.0.1:5000/getNCustomers/100
+
 - getNSellers : Retrieves seller details based on the specified limit.
-    - Endpoint: /getNSellers/{limit}
-    - Description: Fetches details for up to {limit} sellers.
-    - limit (integer): Maximum number of sellers to retrieve. Must be a positive integer.
-    - Example: http://127.0.0.1:5000/getNSellers/20.
+
+  - Endpoint: /getNSellers/{limit}
+  - Description: Fetches details for up to {limit} sellers.
+  - limit (integer): Maximum number of sellers to retrieve. Must be a positive integer.
+  - Example: http://127.0.0.1:5000/getNSellers/20.
 
 - getOrders : Retrieves order details based on the specified date range.
-    - Endpoint: /getOrders
-    - Query Parameters:
-        - start_date (string): Start of the date range in YYYY-MM-DD format.
-        - end_date (string): End of the date range in YYYY-MM-DD format.
-        - Year Ranges from year 2016 to 2018 
-    - Example: http://127.0.0.1:5000/getOrders?start_date=2024-01-01&end_date=2024-01-31 
+
+  - Endpoint: /getOrders
+  - Query Parameters:
+    - start_date (string): Start of the date range in YYYY-MM-DD format.
+    - end_date (string): End of the date range in YYYY-MM-DD format.
+    - Year Ranges from year 2016 to 2018
+  - Example: http://127.0.0.1:5000/getOrders?start_date=2024-01-01&end_date=2024-01-31
 
 - getNProducts : Retrieves product details based on the specified limit.
-    - Endpoint: /getNProducts/{limit}
-    - limit (integer): Maximum number of products to retrieve. Must be a positive integer.
-    - Example: http://127.0.0.1:5000/getNProducts/30
 
-    
+  - Endpoint: /getNProducts/{limit}
+  - limit (integer): Maximum number of products to retrieve. Must be a positive integer.
+  - Example: http://127.0.0.1:5000/getNProducts/30
+
+- getLocationsWithHighestAvgOrderValue : Retrieves cities and states with the highest average order value.
+
+  - Endpoint: /getLocationsWithHighestAvgOrderValue
+  - limit (positive integer, optional): The number of locations to retrieve.
+  - Example : http://127.0.0.1:5000/getLocationsWithHighestAvgOrderValue?limit=5
+
+- getMostFrequentProductCategories : Fetches product categories with the highest number of purchases.
+
+  - Endpoint: /getMostFrequentProductCategories
+  - limit (positive integer, optional): The number of categories to retrieve (default: 5).
+  - Example: http://127.0.0.1:5000/getMostFrequentProductCategories?limit=3
+
+- getMostFrequentPurchaseHours : Retrieves the hours with the highest number of purchases.
+
+  - Endpoint: /getMostFrequentPurchaseHours
+  - limit (positive integer, optional): The number of hours to retrieve (default: 5).
+  - Example : http://127.0.0.1:5000/getMostFrequentPurchaseHours?limit=3
+
+- getMostProfitableLocations : Fetches cities and states generating the highest total revenue.
+
+  - Endpoint: /getMostProfitableLocations
+  - limit (positive integer, optional): The number of locations to retrieve (default: 10).
+  - Example : http://127.0.0.1:5000/getMostProfitableLocations?limit=5
+
+- getTop5CustomersOnSpendings : Retrieves the top 5 customers with the highest total spending.
+
+  - Endpoint: /getTop5CustomersOnSpendings
+  - Example : http://127.0.0.1:5000/getTop5CustomersOnSpendings
+
 ### Error Codes and Messages
 
 Code 0: Indicates an error or missing required parameters.
