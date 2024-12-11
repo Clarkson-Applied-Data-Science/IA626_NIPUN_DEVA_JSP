@@ -39,7 +39,6 @@ This dataset pertains to Target's operations, encompassing 100,000 orders placed
 ## Relational Database
 
 We created a relational database to efficiently store this data using normalization, a common and efficient way for analytical use cases. This structure enables optimized querying and easier reporting. Our python script is idempotent in creating the tables and storing the data into the tables.
-Below is a snapshot of the relational diagram.
 
 Below are some of the normalization steps we took in order to create this relational database.
 
