@@ -80,11 +80,37 @@ Base URL: http://127.0.0.1:5000
 Some of the Endpoints are:
 
 - getNOrders : Retrieves order details based on the specified limit.
-- getNCustomers : Retrieves customer details based on the specified limit.
-- getNSellers : Retrieves seller details based on the specified limit.
-- getOrders : Retrieves order details based on the specified date range.
-- getNProducts : Retrieves product details based on the specified limit.
+    - Endpoint: /getNOrders/{limit}
+    - Description: Fetches details for up to {limit} orders.
+    - limit (integer): Maximum number of orders to retrieve. Must be a positive integer.
+    - Example : http://127.0.0.1:5000/getNOrders/50.
 
+- getNCustomers : Retrieves customer details based on the specified limit.
+
+    - Endpoint: /getNCustomers/{limit}
+    - limit (integer): Maximum number of customers to retrieve. Must be a positive integer.
+    - Example : http://127.0.0.1:5000/getNCustomers/100
+    
+- getNSellers : Retrieves seller details based on the specified limit.
+    - Endpoint: /getNSellers/{limit}
+    - Description: Fetches details for up to {limit} sellers.
+    - limit (integer): Maximum number of sellers to retrieve. Must be a positive integer.
+    - Example: http://127.0.0.1:5000/getNSellers/20.
+
+- getOrders : Retrieves order details based on the specified date range.
+    - Endpoint: /getOrders
+    - Query Parameters:
+        - start_date (string): Start of the date range in YYYY-MM-DD format.
+        - end_date (string): End of the date range in YYYY-MM-DD format.
+        - Year Ranges from year 2016 to 2018 
+    - Example: http://127.0.0.1:5000/getOrders?start_date=2024-01-01&end_date=2024-01-31 
+
+- getNProducts : Retrieves product details based on the specified limit.
+    - Endpoint: /getNProducts/{limit}
+    - limit (integer): Maximum number of products to retrieve. Must be a positive integer.
+    - Example: http://127.0.0.1:5000/getNProducts/30
+
+    
 ### Error Codes and Messages
 
 Code 0: Indicates an error or missing required parameters.
