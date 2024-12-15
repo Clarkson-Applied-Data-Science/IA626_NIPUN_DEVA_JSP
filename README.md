@@ -1,3 +1,10 @@
+## Group members:
+1) Devaduth Vempati
+2) Nipun Davasam
+3) Jai shankar prakash Komakula
+
+
+
 # Target E-Commerce Sales Data
 
 ## Project Decription
