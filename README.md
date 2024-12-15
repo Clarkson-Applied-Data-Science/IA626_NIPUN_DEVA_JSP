@@ -1,7 +1,7 @@
 ## Group members:
 1) Devaduth Vempati
 2) Nipun Davasam
-3) Jai shankar prakash Komakula
+3) Jai Shankar Prakash Komakula
 
 
 
